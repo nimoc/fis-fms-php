@@ -5,7 +5,7 @@
 
 本项目展示 FMS 如何基于 FIS 的[静态资源映射表](http://fis.baidu.com/fis3/docs/lv3.html#%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E6%98%A0%E5%B0%84%E8%A1%A8)与 PHP 结合，在后端模板中使用[文件指纹](http://fis.baidu.com/fis3/docs/beginning/release.html#%E6%96%87%E4%BB%B6%E6%8C%87%E7%BA%B9)
 
-[在线示例](http://fis-fms-php.fms.help/)
+**[在线示例](http://fis-fms-php.fms.help/)**
 
 希望能借此示例让使用 FIS 的人都可以基于 Mock Server 实现 FIS 解决方案
 
@@ -47,7 +47,9 @@ fis3 release  -w -d ./output
 ```
 
 启动 PHP 渲染接口
+
 > 请先确保你安装了 [PHP CLI](http://fms.help/install-php-cli.html)
+
 ```shell
 php -S 127.0.0.1:1236 -t mock/
 ```
