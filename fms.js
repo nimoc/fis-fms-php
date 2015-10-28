@@ -3,7 +3,7 @@ var fms = require('fms')
 fms.run({
     port: 3002,
     view: {
-        templateDir: './view/',
+        templateDir: './output/view/',
         server: "http://127.0.0.1:1236"
     },
     static: './output'
