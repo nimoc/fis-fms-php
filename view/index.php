@@ -10,6 +10,9 @@
     <br>
     <img src="<?php _src("static/img/avatar.jpg") ?>">
     请在浏览器中查看源码
+    <hr>
+    <a href="https://github.com/nimojs/fis-fms-php/blob/master/view/index.php">PHP渲染接口</a>
+    <a href="https://github.com/nimojs/fis-fms-php/blob/master/view/index.php">本页面模板</a>
     <script src="<?php _src("static/js/index.js") ?>"></script>
 </body>
 </html>
