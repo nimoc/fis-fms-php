@@ -16,16 +16,14 @@ function _src($path) {
 
 date_default_timezone_set("Shanghai/Asia");
 // __object_array 将 POST请求转换为 PHP对象
-function __object_array ($array) {
-    if(is_object($array)) {  
-        $array = (array)$array;  
+function __object_array($e){
+    $e=(array)$e;
+    foreach($e as $k=>$v){
+        if( gettype($v)=='resource' ) return;
+        if( gettype($v)=='object' || gettype($v)=='array' )
+            $e[$k]=(array)__object_array($v);
     }
-    if(is_array($array)) {  
-        foreach ($array as $key=>$value) {
-            $array[$key] = __object_array($value);
-        }  
-    }
-     return $array;  
+    return $e;
 }
 $__settings = __object_array(json_decode($_POST['_fms']));
 
